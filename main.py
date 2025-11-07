@@ -122,7 +122,7 @@ root.title("🎸 ギターコード進行ジェネレータ（再生付き）")
 root.geometry("550x500")
 root.resizable(False, False)
 
-title_label = tk.Label(root, text="🎵 ギターコード進行ジェネレータ", font=("Meiryo", 16, "bold"))
+title_label = tk.Label(root, text="🎸 ギターコード進行ジェネレータ🎸", font=("Meiryo", 16, "bold"))
 title_label.pack(pady=10)
 
 # 入力選択フレーム
@@ -171,7 +171,7 @@ def on_generate():
                         command=lambda c=chord: play_chord(c))
         btn.pack(side="left", padx=5)
 
-generate_button = tk.Button(root, text="🎶 コード進行を生成", font=("Meiryo", 12),
+generate_button = tk.Button(root, text="🎶  コード進行を生成 🎶 ", font=("Meiryo", 12),
                             command=on_generate, bg="#4CAF50", fg="white")
 generate_button.pack(pady=10)
 
