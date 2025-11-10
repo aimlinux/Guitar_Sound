@@ -30,7 +30,7 @@ COMMON_PATTERNS = {
     'Ballad': [ 
         ['I','vi','IV','V'],
         ['I','V','vi','IV']
-    ],
+    ], 
 }
 
 CHORD_SHAPES = {
@@ -44,7 +44,7 @@ CHORD_SHAPES = {
     'E': '022100',
     'A': 'x02220',
     'Bm': 'x24432',
-    'F#m': '244222'
+    'F#m': '244222' 
 }
 
 ROMAN_TO_INDEX = {'I':0,'ii':1,'II':1,'iii':2,'III':2,'IV':3,'V':4,'vi':5,'VI':5,'vii°':6,'VII':6}
@@ -56,7 +56,7 @@ NOTE_TO_MIDI = {
     'G': 67, 'G#': 68, 'Ab': 68,
     'A': 69, 'A#': 70, 'Bb': 70,
     'B': 71
-}
+} 
 
 # ---------- コード関連 ----------
 
@@ -115,14 +115,14 @@ def play_chord(chord_name):
 # ---------- GUI ----------
 
 root = tb.Window(themename="darkly")
-root.title("🎸 Guitar Chord Progression Generator 🎵")
+root.title(" Guitar Chord Progression Generator ")
 root.geometry("800x700")
 root.resizable(False, False)
 
 # タイトル
 title_label = tb.Label(
     root,
-    text="🎸 Guitar Chord Progression Generator 🎵",
+    text=" Guitar Chord Progression Generator ",
     font=("Segoe UI", 18, "bold"),
     bootstyle="info" 
 )
@@ -143,7 +143,7 @@ style_menu = tb.Combobox(frame, textvariable=style_var, values=list(COMMON_PATTE
 style_menu.grid(row=0, column=3, padx=5)
 
 # 出力テキスト（枠付き）
-output_frame = tb.Labelframe(root, text="🎶 Generated Progression", bootstyle="secondary")
+output_frame = tb.Labelframe(root, text=" Generated Progression", bootstyle="secondary")
 output_frame.pack(pady=10, fill="x", padx=15)
 
 output_text = tk.Text(output_frame, width=65, height=10, wrap="word", font=("Consolas", 11), bg="#222", fg="#E8E8E8", relief="flat")
@@ -191,7 +191,7 @@ generate_button.pack(pady=20)
 # クレジット
 footer = tb.Label(
     root,
-    text="Created by 小原和真 🎸",
+    text="Created by KAZUMA KOHARA",
     font=("Segoe UI", 18),
     bootstyle="secondary"
 )
