@@ -27,7 +27,7 @@ COMMON_PATTERNS = {
         ['I','IV','V','IV'],
         ['I','V','I','V']
     ],
-    'Ballad': [
+    'Ballad': [ 
         ['I','vi','IV','V'],
         ['I','V','vi','IV']
     ], 
