@@ -196,5 +196,5 @@ footer = tb.Label(
     bootstyle="secondary"
 )
 footer.pack(side="bottom", pady=8)
-
+   
 root.mainloop()
