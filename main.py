@@ -81,7 +81,7 @@ def get_shape(chord):
 
 # ---------- MIDI再生 ----------
 
-def chord_to_midi_notes(chord_name):
+def chord_to_midi_notes(chord_name): 
     root = chord_name[0]
     if len(chord_name) > 1 and chord_name[1] in ['#', 'b']:
         root = chord_name[:2]
