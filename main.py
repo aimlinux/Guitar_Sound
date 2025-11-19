@@ -181,7 +181,7 @@ def on_generate():
 generate_button = tb.Button(
     root,
     text="Generate Progression",
-    bootstyle="info-outline",
+    bootstyle="info-outline", 
     width=25,
     command=on_generate,
     padding=(10, 10),         # 横・縦方向の余白（px）
