@@ -6,7 +6,7 @@ import pygame.midi
 import time
 import threading
 import ttkbootstrap as tb
-from ttkbootstrap.constants import * 
+from ttkbootstrap.constants import *
 from collections import OrderedDict 
 
 # ---------- データ定義 ----------
