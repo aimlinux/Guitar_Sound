@@ -7,7 +7,7 @@ import time
 import threading
 import ttkbootstrap as tb
 from ttkbootstrap.constants import *
-from collections import OrderedDict 
+from collections import OrderedDict
 
 # ---------- データ定義 ----------
 DIATONIC_MAJOR = {
