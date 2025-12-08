@@ -588,7 +588,7 @@ class ChordApp:
 def main():
     root = tb.Window(themename='vapor')
     app = ChordApp(root)
-    root.mainloop() 
+    root.mainloop()
 
 if __name__ == '__main__':
     main()
