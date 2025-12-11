@@ -209,7 +209,7 @@ class MidiManager:
                     pass
 
     def note_off(self, note, vel=100):
-        with self.lock: 
+        with self.lock:
             if self.output:
                 try:
                     self.output.note_off(int(note), int(vel))
