@@ -139,7 +139,7 @@ def chord_to_midi_notes(chord_name, octave=0, inversion=0):
         else:
             notes = [root_note, root_note+4, root_note+7, root_note+10]
     else:
-        notes = [root_note, root_note+4, root_note+7]
+        notes = [root_note, root_note+4, root_note+7] 
     # apply inversion: rotate and shift up an octave if needed
     for _ in range(inversion):
         if notes:
