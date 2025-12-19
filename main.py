@@ -158,6 +158,8 @@ def on_generate():
         widget.destroy()
 
     key = key_var.get()
+    key = key if key in DIATONIC_MAJOR else 'C'
+    key = key.upper()
     style = style_var.get()
     progression = generate_progression(key, style)
     result = f"Key: {key}  Style: {style}\n\nProgression: | " + " | ".join(progression) + " |\n\n"
