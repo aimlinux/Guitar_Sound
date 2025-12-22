@@ -157,7 +157,7 @@ def on_generate():
     for widget in chord_buttons_frame.winfo_children():
         widget.destroy()
 
-    key = key_var.get()
+    key = key_var.get() 
     style = style_var.get()
     progression = generate_progression(key, style)
     result = f"Key: {key}  Style: {style}\n\nProgression: | " + " | ".join(progression) + " |\n\n"
