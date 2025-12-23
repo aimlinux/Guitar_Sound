@@ -422,7 +422,7 @@ class ChordApp:
                 MIDI.note_on(n, vel)
             time.sleep(0.9)
             for n in notes:
-                MIDI.note_off(n)
+                MIDI.note_off(n)  
         except Exception as e:
             print('play error:', e)
             self.set_status('Play error', 3000)
@@ -456,7 +456,7 @@ class ChordApp:
             return
         self.play_flag.set()
         self.play_thread = threading.Thread(target=self.play_progression_loop, daemon=True)
-        self.play_thread.start()
+        self.play_thread.start() 
         self.set_status('Playing')
 
     def on_stop(self):
