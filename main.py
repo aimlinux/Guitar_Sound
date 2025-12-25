@@ -161,7 +161,7 @@ def on_generate():
     style = style_var.get()
     progression = generate_progression(key, style)
     result = f"Key: {key}  Style: {style}\n\nProgression: | " + " | ".join(progression) + " |\n\n"
-    for chord in progression: 
+    for chord in progression:
         result += f"{chord:4s} → {get_shape(chord)}\n"
 
     output_text.delete("1.0", tk.END)
@@ -171,7 +171,6 @@ def on_generate():
         btn = tb.Button(
             chord_buttons_frame,
             text=chord,
-            width=8,
             width=8,
             bootstyle="success-outline",
             command=lambda c=chord: play_chord(c)
