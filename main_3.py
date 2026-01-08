@@ -460,40 +460,9 @@ class ChordApp:
         self.set_status('Playing')
 
     def on_stop(self):
-        self.play_flag.clear()
+        self.play_flag.clear()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
         self.set_status('Stopping', 800)
-        # ensure notes off
-        MIDI.all_notes_off()
-
-    def play_progression_loop(self):
-        try:
-            self.ensure_midi_open()
-        except:
-            pass
-        tempo = self.tempo_var.get()
-        beat = 60.0 / tempo
-        progression = self.current_progression[:]
-        play_style = self.play_style_var.get()
-        loop = self.loop_var.get()
-        vel = self.velocity_var.get()
-        humanize = self.humanize_var.get() / 1000.0
-
-        try:
-            while self.play_flag.is_set():
-                for i, chord in enumerate(progression):
-                    if not self.play_flag.is_set():
-                        break
-                    # highlight current chord in UI
-                    self.highlight_chord_button(i)
-                    notes = chord_to_midi_notes(chord, octave=self.octave_var.get()*12, inversion=self.inversion_var.get())
-                    if play_style == 'Block':
-                        # play together for 2 beats
-                        jitter = random.uniform(-humanize, humanize)
-                        for n in notes:
-                            MIDI.note_on(n, vel)
-                        time.sleep(max(0, beat*2 + jitter))
-                        for n in notes:
-                            MIDI.note_off(n)
+        # ensure notes off                                              00000000000000000000000000999999999999                MIDI.note_off(n)
                     else:
                         # arpeggio across 4 beats
                         total = beat * 4
