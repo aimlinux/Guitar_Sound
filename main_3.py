@@ -174,7 +174,7 @@ class MidiManager:
             count = pygame.midi.get_count()
             for i in range(count):
                 info = pygame.midi.get_device_info(i)
-                interf, name, input, is_output, opened = info
+                interf, name, is_input, is_output, opened = info
                 name = name.decode('utf-8') if isinstance(name, bytes) else str(name)
                 devs.append((i, name, bool(is_output)))
         except Exception as e:
