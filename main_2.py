@@ -195,7 +195,7 @@ class MidiManager:
                 self.output = pygame.midi.Output(device_id)
                 self.device_id = device_id
                 return True
-            except Exception as e:
+            except Exception as e: 
                 print("open_output error:", e)
                 self.output = None
                 return False
