@@ -404,13 +404,12 @@ class ChordApp:
         # midi cleanup won't be forced here; notes turned off in thread
         time.sleep(0.05)
 
-    def play_progression_loop(self):
+    def _loop(self):
         # open midi device
         try:
             self.ensure_midi_open()
         except:
             pass
-
         tempo = self.tempo_var.get()
         beat_length = 60.0 / tempo  # 1 beat (quarter note) in seconds
 
