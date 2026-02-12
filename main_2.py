@@ -352,7 +352,7 @@ class ChordApp:
 
     def safe_play_chord(self, chord):
         """
-        単一コードを安全に再生（非同期スレッド上）。
+        単一コードを安全に再生（非同期スレッド上）
         """
         try:
             # try auto open midi device if not opened
