@@ -422,7 +422,7 @@ class ChordApp:
         self.style_menu = tb.Combobox(control_frame, textvariable=self.style_var, values=list(COMMON_PATTERNS.keys()), width=10, state="readonly", bootstyle="info")
         self.style_menu.grid(row=0, column=3, padx=6)
 
-        tb.Label(control_frame, text="Bars:", font=("Segoe UI", 11)).grid(row=0, column=4, sticky='w', padx=4)
+        tb.Label(control_frame, text="Num Of Codes :", font=("Segoe UI", 11)).grid(row=0, column=4, sticky='w', padx=4)
         self.bars_var = tk.IntVar(value=4)
         self.bars_spin = tb.Spinbox(control_frame, from_=1, to=16, textvariable=self.bars_var, width=5)
         self.bars_spin.grid(row=0, column=5, padx=6)
