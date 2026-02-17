@@ -16,7 +16,11 @@ import sys
 import pyautogui
 import json
 
+
+# ---------- 定数定義 ---------
 url = "github.com/aimlinux/Guitar_Sound"
+
+main_theme = "darkly"  # 初期テーマを変数で管理
 
 # ---------- データ定義 ----------
 DIATONIC_MAJOR = {
@@ -836,7 +840,7 @@ class ChordApp:
 
 
 def main():
-    root = tb.Window(themename="darkly") #初期テーマ
+    root = tb.Window(themename=main_theme) #初期テーマ
     root.title("Guitar Chord Progression Generator (Improved)")
 
     # 画面サイズ取得
