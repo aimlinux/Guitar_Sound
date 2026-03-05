@@ -12,15 +12,15 @@ from collections import OrderedDict
 import cv2
 from PIL import Image, ImageTk
 import os
-import sys
-import pyautogui
-import json
+# import sys
+# import pyautogui
+# import json
 
 
 # ---------- 定数定義 ---------
 url = "github.com/aimlinux/Guitar_Sound"
 
-main_theme = "vapor" # 初期テーマを変数で管理
+main_theme = "solar" # 初期テーマを変数で管理
 # テーマ候補（テーマ名はttkbootstrapのものを指定）
 #🥇 cyborg（最もゲーム風）
 #🥈 darkly（万能ダーク）
